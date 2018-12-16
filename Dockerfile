@@ -18,20 +18,18 @@ RUN make
 
 RUN make install
 
-EXPOSE 443/tcp
+# SoftEther OpenVPN
+EXPOSE 1194/tcp
+EXPOSE 1194/udp
 
-EXPOSE 443/udp
-
-EXPOSE 992/tcp
-
-EXPOSE 992/udp
-
+# SoftEther Management
 EXPOSE 5555/tcp
 
-EXPOSE 5555/udp
-
+# SoftEther SoftEther L2TP/IPSec
 EXPOSE 500/udp
 
+# SoftEther SoftEther L2TP/IPSec
 EXPOSE 1701/udp
 
+# SoftEther SoftEther L2TP/IPSec
 EXPOSE 4500/udp
